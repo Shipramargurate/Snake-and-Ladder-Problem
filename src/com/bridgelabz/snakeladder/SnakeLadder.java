@@ -3,8 +3,8 @@ package com.bridgelabz.snakeladder;
 import java.util.Random;
 
 public class SnakeLadder {
-//Repeat till the Player reaches the winning position 100
-
+//Ensure the player gets to exact winning position 100.
+	static final int winningPosition = 100;
 	public static void main(String[] args) {
 		System.out.println("welcome to snake and ladder game program");
 
@@ -15,7 +15,7 @@ public class SnakeLadder {
 		Random random = new Random(); // creating random object
 
 	
-		while (position < 100) { // repeating till user win
+		while (position < winningPosition) { // repeating till user win
 			int options = random.nextInt(3); // 0 , 1 and 2
 			System.out.println("option : " + options);
 
